@@ -55,6 +55,19 @@ def is_balanced(s):
             
     return contador_mitad1 == contador_mitad2
 
+"""
+Propiesta de solución simplificada:
+
+def is_balanced(s):
+    vowels_set = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"}
+    longitud = len(s)
+    mitad = longitud // 2
+    mitad1 = s[:mitad]
+    mitad2 = s[-mitad:]  # Esto ignora el caracter central en impares
+    return sum(l in vowels_set for l in mitad1) == sum(l in vowels_set for l in mitad2)
+
+"""
+
 is_balanced("racecar") # True.
 is_balanced("Lorem Ipsum") # True.
 is_balanced("Kitty Ipsum") # False.
