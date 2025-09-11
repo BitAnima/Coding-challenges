@@ -48,7 +48,7 @@ def is_balanced(s):
             print(f"Mitad 2 - Vocales encontradas: {letra}")
     
     print(f"\nEl resultado del recuento ha sido: Mitad 1 -> {contador_mitad1}; Mitad 2 -> {contador_mitad2}\n")
-    if {contador_mitad1} == {contador_mitad2}:
+    if contador_mitad1 == contador_mitad2:
         print(f"Las dos mitades tienen el mismo número de vocales.\n")
     else:
         print(f"Las mitades tienen distinto número de vocales.\n")
