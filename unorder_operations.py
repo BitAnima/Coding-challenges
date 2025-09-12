@@ -28,15 +28,15 @@ def evaluate(numbers, operators):
         Si hay más números que operadores, los operadores se reutilizan desde el principio."""
 
         result = op_func(result, numbers[i])
-        print(f"{result}")
+        
     return result
 
 
 # print(evaluate([1, 2, 3, 4, 5], ['+', '*']))  # Imprime 27, porque (1+2)*3+4*5 = 27 con evaluación estrictamente izquierda a derecha
 
 
-evaluate([5, 6, 7, 8, 9], ['+', '-']) #  3
-evaluate([17, 61, 40, 24, 38, 14], ['+', '%']) #  38
-evaluate([20, 2, 4, 24, 12, 3], ['*', '/']) #  60
-evaluate([11, 4, 10, 17, 2], ['*', '*', '%']) #  30
-evaluate([33, 11, 29, 13], ['/', '-']) #  -2
+result = print(f"{evaluate([5, 6, 7, 8, 9], ['+', '-'])}") #  3
+result = print(f"{evaluate([17, 61, 40, 24, 38, 14], ['+', '%'])}") #38
+result = print(f"{evaluate([20, 2, 4, 24, 12, 3], ['*', '/'])}") #  60
+result = print(f"{evaluate([11, 4, 10, 17, 2], ['*', '*', '%'])}") #  30
+result = print(f"{evaluate([33, 11, 29, 13], ['/', '-'])}") #  -2
