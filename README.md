@@ -38,7 +38,6 @@ Estoy empezando desde cero, sin experiencia previa, y quiero dejar constancia de
 
 Me puedes encontrar en:
 
-- [LinkedIn](www.linkedin.com/in/anaelenafdez) — Publicaciones semanales sobre lo que aprendo.
 - [GitHub](https://github.com/BitAnima) — Este y otros proyectos.
 - [FreeCodeCamp](https://www.freecodecamp.org/bitanima) — Mis certificados y retos completados.
 
