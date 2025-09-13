@@ -1,0 +1,53 @@
+"""Reverse Parenthesis
+Given a string that contains properly nested parentheses, return the decoded version of the string using the following rules:
+
+All characters inside each pair of parentheses should be reversed.
+Parentheses should be removed from the final result.
+If parentheses are nested, the innermost pair should be reversed first, and then its result should be included in the reversal of the outer pair.
+Assume all parentheses are evenly balanced and correctly nested."""
+
+def decode(s):
+
+    """
+    Aquí tienes un esqueleto básico en Python de cómo podrías usar acumuladores y pila para este tipo de ejercicios. Te dejo el “andamiaje”, sin la solución final, para que completes la lógica tú misma:
+
+python
+def reverse_parenthesis(s):
+    stack = []          # Aquí va la pila principal
+    curr = []           # Acumulador actual de caracteres
+
+    for char in s:
+        if char == '(':
+            stack.append(curr)    # Guarda el estado previo en la pila
+            curr = []             # Comienza a recolectar nuevo grupo
+        elif char == ')':
+            # Aquí debes invertir curr y combinarlo con lo anterior
+            reversed_part = curr[::-1]   # Invierte la lista de caracteres
+            prev = stack.pop()           # Recupera lo de antes
+            curr = prev + reversed_part  # Une lo anterior con lo invertido
+        else:
+            curr.append(char)    # Suma el carácter actual al grupo vigente
+
+    # Al final, curr tiene el resultado SIN paréntesis
+    return ''.join(curr)
+¿Qué debes hacer tú?
+
+Intenta comprender cada línea y cómo se conectan.
+
+Puedes poner print() en distintos puntos (por ejemplo, después de cada paso importante) para ver cómo cambian las variables.
+
+Prueba este “esqueleto” con varias cadenas, revisa cómo evoluciona la pila y el acumulador.
+
+No olvides quitar los paréntesis del resultado final.
+
+¡Ya tienes un punto de partida! Si al intentarlo te atascas, dime con qué parte y te ayudo a desbloquearte solo con pistas 🌟."""
+
+    
+        
+
+    return s
+
+
+decode("(f(b(dc)e)a)") should return "abcdef".
+# decode("((is?)(a(t d)h)e(n y( uo)r)aC)") should return "Can you read this?".
+# decode("f(Ce(re))o((e(aC)m)d)p") should return "freeCodeCamp".
