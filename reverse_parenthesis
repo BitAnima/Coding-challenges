@@ -8,46 +8,38 @@ Assume all parentheses are evenly balanced and correctly nested."""
 
 def decode(s):
 
-    """
-    Aquí tienes un esqueleto básico en Python de cómo podrías usar acumuladores y pila para este tipo de ejercicios. Te dejo el “andamiaje”, sin la solución final, para que completes la lógica tú misma:
+    reversed_arr = []
+    pila = []
+    position = 0 # Se debe guardar la posición en la nueva cadena, no en la original, para evitar borrar valores accidentalmente
 
-python
-def reverse_parenthesis(s):
-    stack = []          # Aquí va la pila principal
-    curr = []           # Acumulador actual de caracteres
+    for element in s:
+        
+        if element != '(' and element != ')':
+            reversed_arr.append(element)
+            position += 1 # Aumentamos el contador si no se encuentra un paréntesis
 
-    for char in s:
-        if char == '(':
-            stack.append(curr)    # Guarda el estado previo en la pila
-            curr = []             # Comienza a recolectar nuevo grupo
-        elif char == ')':
-            # Aquí debes invertir curr y combinarlo con lo anterior
-            reversed_part = curr[::-1]   # Invierte la lista de caracteres
-            prev = stack.pop()           # Recupera lo de antes
-            curr = prev + reversed_part  # Une lo anterior con lo invertido
-        else:
-            curr.append(char)    # Suma el carácter actual al grupo vigente
+        if element == '(':
+            pila.append(position) # Se guarda la posición actual de la nueva cadena, no la del elemento por el que está iterando
+        if element == ')':
+            inicio = pila.pop() # La pila devuelve la última posición almacenada, que corresponde al último paréntesis de apertura detectado
+            fin = position
+            fragment = reversed_arr[inicio:fin] #Slicing: Extraemos el contenido del fragmento según lo que hay en su posición
+            fragment.reverse()
 
-    # Al final, curr tiene el resultado SIN paréntesis
-    return ''.join(curr)
-¿Qué debes hacer tú?
+            # Borramos la zona de los paréntesis según su posición
+            del reversed_arr[inicio:fin]
 
-Intenta comprender cada línea y cómo se conectan.
+            # Insertamos el fragmento en la misma posición donde estaba el paréntesis de apertura:
+            reversed_arr[inicio:inicio] = fragment
 
-Puedes poner print() en distintos puntos (por ejemplo, después de cada paso importante) para ver cómo cambian las variables.
-
-Prueba este “esqueleto” con varias cadenas, revisa cómo evoluciona la pila y el acumulador.
-
-No olvides quitar los paréntesis del resultado final.
-
-¡Ya tienes un punto de partida! Si al intentarlo te atascas, dime con qué parte y te ayudo a desbloquearte solo con pistas 🌟."""
-
+            position = len(reversed_arr) # Se actualiza la posición después de la modificación
+            
+    print(f"Reversed array:", ''.join(reversed_arr), "\n")  
     
         
+    return ''.join(reversed_arr)
 
-    return s
 
-
-decode("(f(b(dc)e)a)") should return "abcdef".
-# decode("((is?)(a(t d)h)e(n y( uo)r)aC)") should return "Can you read this?".
-# decode("f(Ce(re))o((e(aC)m)d)p") should return "freeCodeCamp".
+decode("(f(b(dc)e)a)") # "abcdef".
+decode("((is?)(a(t d)h)e(n y( uo)r)aC)") # "Can you read this?".
+decode("f(Ce(re))o((e(aC)m)d)p") # "freeCodeCamp".
