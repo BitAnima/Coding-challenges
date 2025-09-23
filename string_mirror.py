@@ -20,9 +20,16 @@ def is_mirror(str1, str2):
 
     clean_string1, clean_string2 = clean_strings(str1, str2)
 
-    #El método reverse() no funciona con cadenas en Python. Para invertir cadenas se debe utilizar slicing
-
+    """El método reverse() no funciona con cadenas en Python porque son inmutables. Para invertir cadenas se debe utilizar slicing
+    
     reversed_string = clean_string1[::-1]
+    
+    Sintaxis [inicio:fin:paso] -> Los dos puntos con el -1 significan: Sin inicio ni fin (se toma toda la cadena).
+    Paso -1: recorre la cadena de atrás hacia adelante (la invierte)."""
+
+    #También se puede utilizar compresión de listas y la función reversed combinada con ''.join().
+    reversed_string = "".join(reversed(clean_string1))
+
     print(reversed_string)
     if reversed_string == clean_string2:
         return True
