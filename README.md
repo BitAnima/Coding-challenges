@@ -17,20 +17,57 @@ Estoy empezando desde cero, sin experiencia previa, y quiero dejar constancia de
 
 ## 🧠 ¿Qué contiene?
 
-- ✅ Soluciones a retos diarios de FreeCodeCamp.
+- ✅ Soluciones a retos diarios de FreeCodeCamp (en la carpeta [`src/`](src/))
 - 📝 Código comentado y explicado paso a paso.
 - 🔁 Versiones iterativas y recursivas cuando el reto lo permite.
-- 🧪 Casos de prueba para validar cada solución.
+- 🧪 Casos de prueba para validar cada solución (ver [`tests/`](tests/))
 - 💬 Notas personales sobre lo que aprendí o me costó.
+- 📁 Estructura profesional por carpetas para facilitar búsqueda y mantenimiento.
 
 ---
 
-## 🛠️ Tecnologías
+## 📂 Estructura del proyecto
+
+FreeCodeCamp/
+│
+├── README.md
+├── requirements.txt             # (opcional, si usas paquetes externos)
+├── .gitignore
+│
+├── src/                         # Código fuente: retos principales
+│    ├── goldilocks_zone.py
+│    ├── exoplanet_search.py
+│    └── ...otros scripts
+│
+├── tests/                       # Tests automáticos
+│    └── test_goldilocks_zone.py
+│
+└── docs/                        # Documentación opcional y notas extra
+
+
+---
+
+## 🛠️ Tecnologías y herramientas
 
 - Lenguaje principal: **Python**
 - Plataforma de práctica: [FreeCodeCamp](https://www.freecodecamp.org/)
-- Editor: Visual Studio Code
+- Editor: *Visual Studio Code* y *PyCharm*
 - Control de versiones: Git + GitHub
+
+---
+
+## ✅ ¿Cómo ejecutar los tests?
+
+1. Asegúrate de tener Python 3 instalado.
+2. Sitúate en la raíz del proyecto en tu terminal.
+3. Ejecuta:
+
+python -m unittest discover -s tests
+
+o, si usas **pytest**:
+
+pytest tests/
+
 
 ---
 
@@ -41,7 +78,10 @@ Me puedes encontrar en:
 - [GitHub](https://github.com/BitAnima) — Este y otros proyectos.
 - [FreeCodeCamp](https://www.freecodecamp.org/bitanima) — Mis certificados y retos completados.
 
-## 🙌 Gracias
+---
+
+## 🙌 ¡Gracias!
 
 Gracias por pasarte por aquí. Este repositorio es imperfecto, como todo proceso de aprendizaje, pero está lleno de ganas, curiosidad y esfuerzo.  
 ¡Seguimos!
+
