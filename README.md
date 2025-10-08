@@ -28,21 +28,17 @@ Estoy empezando desde cero, sin experiencia previa, y quiero dejar constancia de
 
 ## 📂 Estructura del proyecto
 
-FreeCodeCamp/
+Coding challenges/
 │
 ├── README.md
-├── requirements.txt             # (opcional, si usas paquetes externos)
-├── .gitignore
-│
-├── src/                         # Código fuente: retos principales
-│    ├── goldilocks_zone.py
-│    ├── exoplanet_search.py
+├── src/                     # Código fuente: retos principales (.py)
 │    └── ...otros scripts
 │
-├── tests/                       # Tests automáticos
-│    └── test_goldilocks_zone.py
+├── tests/                   # Tests automáticos (.py)
+│    └── ...tests
 │
-└── docs/                        # Documentación opcional y notas extra
+├── new_folder_structure.py  # Script para reorganizar archivos (puedes eliminarlo tras usarlo)
+├── reverse_parenthesis      # (puedes moverlo a src/ si es un reto)
 
 
 ---
