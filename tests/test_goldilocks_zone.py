@@ -11,7 +11,8 @@ Para ejecutar los tests:
 
 
 import unittest
-from goldilocks_zone import goldilocks_zone
+from src.goldilocks_zone import goldilocks_zone
+
 
 class TestGoldilocksZone(unittest.TestCase):
     """
