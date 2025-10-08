@@ -36,10 +36,6 @@ Coding challenges/
 │
 ├── tests/                   # Tests automáticos (.py)
 │    └── ...tests
-│
-├── new_folder_structure.py  # Script para reorganizar archivos (puedes eliminarlo tras usarlo)
-├── reverse_parenthesis      # (puedes moverlo a src/ si es un reto)
-
 
 ---
 
