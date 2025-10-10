@@ -9,7 +9,7 @@ Para ejecutar los tests:
 import unittest
 from src.moon_phase import moon_phase
 
-class TestLandingSpot(unittest.TestCase):
+class TestMoonPhase(unittest.TestCase):
     def test_new_moon(self):
         """moon_phase("2000-01-12") # "New"."""
         result = moon_phase("2000-01-12")
