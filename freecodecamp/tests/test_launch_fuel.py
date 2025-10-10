@@ -1,5 +1,5 @@
 import unittest
-from src.launch_fuel import launch_fuel
+from freecodecamp.src.launch_fuel import launch_fuel
 
 class TestLaunchFuel(unittest.TestCase):
     def test_caso_1(self):

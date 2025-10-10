@@ -7,7 +7,7 @@ Para ejecutar los tests:
 """
 
 import unittest
-from src.moon_phase import moon_phase
+from freecodecamp.src.moon_phase import moon_phase
 
 class TestMoonPhase(unittest.TestCase):
     def test_new_moon(self):

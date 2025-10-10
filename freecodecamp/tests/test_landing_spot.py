@@ -9,7 +9,7 @@ Coloca este archivo en la carpeta 'tests/' y ejecuta con:
 """
 
 import unittest
-from src.landing_spot import find_landing_spot
+from freecodecamp.src.landing_spot import find_landing_spot
 
 class TestLandingSpot(unittest.TestCase):
     def test_caso_1(self):

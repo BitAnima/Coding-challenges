@@ -17,10 +17,10 @@ Estoy empezando desde cero, sin experiencia previa, y quiero dejar constancia de
 
 ## 🧠 ¿Qué contiene?
 
-- ✅ Soluciones a retos diarios de FreeCodeCamp (en la carpeta [`src/`](src/))
+- ✅ Soluciones a retos diarios de FreeCodeCamp (en la carpeta [`src/`](freecodecamp/src/))
 - 📝 Código comentado y explicado paso a paso.
 - 🔁 Versiones iterativas y recursivas cuando el reto lo permite.
-- 🧪 Casos de prueba para validar cada solución (ver [`tests/`](tests/))
+- 🧪 Casos de prueba para validar cada solución (ver [`tests/`](freecodecamp/tests/))
 - 💬 Notas personales sobre lo que aprendí o me costó.
 - 📁 Estructura profesional por carpetas para facilitar búsqueda y mantenimiento.
 

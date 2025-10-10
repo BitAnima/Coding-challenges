@@ -11,7 +11,7 @@ EXCEPTIONS = {
 }
 
 # Carpetas principales
-SRC_FOLDER = 'src'
+SRC_FOLDER = 'freecodecamp/src'
 TESTS_FOLDER = 'tests'
 
 # Crear las carpetas si no existen

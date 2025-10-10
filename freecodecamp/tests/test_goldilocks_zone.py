@@ -11,7 +11,7 @@ Para ejecutar los tests:
 
 
 import unittest
-from src.goldilocks_zone import goldilocks_zone
+from freecodecamp.src.goldilocks_zone import goldilocks_zone
 
 
 class TestGoldilocksZone(unittest.TestCase):
