@@ -4,6 +4,7 @@ Given an array of numbers and an integer target, find two unique numbers in the 
 
 The returned array should have the indices in ascending order."""
 
+"""Solución O(n^2)"""
 def find_target(arr, target):
 
     for i, element in enumerate(arr):
@@ -23,7 +24,7 @@ def find_target(arr, target):
        print(f"El precio del producto que puedes comprar es: {result}")
        return result
 """
-   
+
 
 find_target([2, 7, 11, 15], 9) # [0, 1].
 find_target([3, 2, 4, 5], 6) # [1, 2].
