@@ -25,10 +25,6 @@ def parse_image(markdown):
     return f'<img src="{img_url}" alt="{alt_text}">'
 
 
-
-
-    return markdown
-
 parse_image("![Cute cat](cat.png)") #'<img src="cat.png" alt="Cute cat">'.
 parse_image("![Rocket Ship](https://freecodecamp.org/cdn/rocket-ship.jpg)") #'<img src="https://freecodecamp.org/cdn/rocket-ship.jpg" alt="Rocket Ship">'.
 parse_image("![Cute cats!](https://freecodecamp.org/cats.jpeg)") #'<img src="https://freecodecamp.org/cats.jpeg" alt="Cute cats!">'.
